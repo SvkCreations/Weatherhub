@@ -61,7 +61,7 @@ function getLocation() {
                 weatherImg = "Clouds.jpg";
                 imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
             }
-            customCards.style.display="none";
+            
             document.location="index.html#weather";
             row.innerHTML = `
             <div class="col-md-6 px-4 text-light weather-container" style="background:url('Images/${weatherImg}'); background-size:100%; background-repeat:no-repeat">
