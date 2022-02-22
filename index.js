@@ -170,7 +170,7 @@ searchBtn.addEventListener("click", () => {
             </div>
     </div>`;
         } else {
-            console.log("Some error occured");
+            alert("No such city found. Check if you have spelt it correctly");
         }
     };
 
