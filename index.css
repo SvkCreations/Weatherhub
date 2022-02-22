@@ -1,0 +1,26 @@
+.welcome{
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.search{
+    border: 2px solid #26a0da;
+    color:#26a0da ;
+}
+.search:hover{
+    background-color: #26a0da;
+    color: #314755;
+    transition-duration: .3s;
+}
+.weather-container{
+    height:300px;
+}
+/* .weather-row{
+    border-right:1px solid white
+} */
+
+@media only screen and (max-width: 600px) {
+    .weather-container {
+      height: auto;
+    }
+  }
