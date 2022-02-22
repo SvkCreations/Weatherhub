@@ -17,7 +17,7 @@ function getLocation() {
     const xhr = new XMLHttpRequest();
     xhr.open(
         "GET",
-        `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`,
         true
     );
 
@@ -100,7 +100,7 @@ searchBtn.addEventListener("click", () => {
     const xhr = new XMLHttpRequest();
     xhr.open(
         "GET",
-        `http://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`,
         true
     );
 
