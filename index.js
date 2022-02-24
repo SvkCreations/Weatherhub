@@ -20,7 +20,7 @@ function showPosition(position) {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`,
     true
   );
 
@@ -57,25 +57,25 @@ function showPosition(position) {
       let imgSrc = "";
       if (weatherid >= 200 && weatherid < 300) {
         weatherImg = "Thunderstorm.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/11n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/11n@2x.png";
       } else if (weatherid >= 300 && weatherid < 400) {
         weatherImg = "Drizzle.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/09n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/09n@2x.png";
       } else if (weatherid >= 500 && weatherid < 600) {
         weatherImg = "Rain.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/10n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/10n@2x.png";
       } else if (weatherid >= 600 && weatherid < 700) {
         weatherImg = "Snow.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/13n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/13n@2x.png";
       } else if (weatherid >= 700 && weatherid < 800) {
         weatherImg = "Haze.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/50n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/50n@2x.png";
       } else if (weatherid == 800) {
         weatherImg = "Clear.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/01n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/01n@2x.png";
       } else if (weatherid > 800) {
         weatherImg = "Clouds.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/04n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
       }
       document.location = "index.html#weather";
       row.innerHTML = `
@@ -136,25 +136,25 @@ function showPosition(position) {
         let imgSrc = "";
         if (weatherid >= 200 && weatherid < 300) {
           weatherImg = "Thunderstorm.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/11n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/11n@2x.png";
         } else if (weatherid >= 300 && weatherid < 400) {
           weatherImg = "Drizzle.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/09n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/09n@2x.png";
         } else if (weatherid >= 500 && weatherid < 600) {
           weatherImg = "Rain.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/10n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/10n@2x.png";
         } else if (weatherid >= 600 && weatherid < 700) {
           weatherImg = "Snow.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/13n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/13n@2x.png";
         } else if (weatherid >= 700 && weatherid < 800) {
           weatherImg = "Haze.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/50n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/50n@2x.png";
         } else if (weatherid == 800) {
           weatherImg = "Clear.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/01n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/01n@2x.png";
         } else if (weatherid > 800) {
           weatherImg = "Clouds.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/04n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
         }
         hourly.innerHTML += `
 
@@ -209,25 +209,25 @@ function showPosition(position) {
         let imgSrc = "";
         if (weatherId >= 200 && weatherId < 300) {
           weatherImg = "Thunderstorm.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/11n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/11n@2x.png";
         } else if (weatherId >= 300 && weatherId < 400) {
           weatherImg = "Drizzle.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/09n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/09n@2x.png";
         } else if (weatherId >= 500 && weatherId < 600) {
           weatherImg = "Rain.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/10n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/10n@2x.png";
         } else if (weatherId >= 600 && weatherId < 700) {
           weatherImg = "Snow.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/13n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/13n@2x.png";
         } else if (weatherId >= 700 && weatherId < 800) {
           weatherImg = "Haze.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/50n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/50n@2x.png";
         } else if (weatherId == 800) {
           weatherImg = "Clear.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/01n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/01n@2x.png";
         } else if (weatherId > 800) {
           weatherImg = "Clouds.jpg";
-          imgSrc = "http://openweathermap.org/img/wn/04n@2x.png";
+          imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
         }
 
         daily.innerHTML += `
@@ -260,7 +260,7 @@ searchBtn.addEventListener("click", () => {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    `http://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`,
     true
   );
 
@@ -282,25 +282,25 @@ searchBtn.addEventListener("click", () => {
       let imgSrc = "";
       if (weatherid >= 200 && weatherid < 300) {
         weatherImg = "Thunderstorm.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/11n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/11n@2x.png";
       } else if (weatherid >= 300 && weatherid < 400) {
         weatherImg = "Drizzle.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/09n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/09n@2x.png";
       } else if (weatherid >= 500 && weatherid < 600) {
         weatherImg = "Rain.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/10n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/10n@2x.png";
       } else if (weatherid >= 600 && weatherid < 700) {
         weatherImg = "Snow.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/13n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/13n@2x.png";
       } else if (weatherid >= 700 && weatherid < 800) {
         weatherImg = "Haze.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/50n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/50n@2x.png";
       } else if (weatherid == 800) {
         weatherImg = "Clear.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/01n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/01n@2x.png";
       } else if (weatherid > 800) {
         weatherImg = "Clouds.jpg";
-        imgSrc = "http://openweathermap.org/img/wn/04n@2x.png";
+        imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
       }
       document.location = "index.html#weather";
       document.getElementById("hourly-heading").style.display="none";
