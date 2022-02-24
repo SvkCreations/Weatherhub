@@ -302,7 +302,6 @@ searchBtn.addEventListener("click", () => {
         weatherImg = "Clouds.jpg";
         imgSrc = "https://openweathermap.org/img/wn/04n@2x.png";
       }
-      document.location = "index.html#weather";
       document.getElementById("hourly-heading").style.display="none";
       document.getElementById("daily-heading").style.display="none";
       hourly.innerHTML="";
